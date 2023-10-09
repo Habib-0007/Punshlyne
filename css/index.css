@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins");
+
+* {
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: hsl(220, 14.3%, 95.9%);
+}
+
+:root {
+  --main: hsl(45, 93.4%, 47.5%);
+}
+
+::selection {
+  background: var(--main);
+  color: #fff;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-block: 12px;
+}
+
+header h1 {
+  font-size: 1.5em;
+  color: var(--main);
+}
+
+.random_section {
+  width: 95%;
+  max-width: 800px;
+  text-align: center;
+  margin: 50px auto 40px;
+  background: var(--main);
+  color: #fff;
+  padding: 20px 10px;
+  border-radius: 12px;
+}
+
+.random {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.random p {
+  font-size: 1.2em;
+  padding-block: 6px;
+}
+
+.random p span {
+  font-weight: 600;
+}
+
+.random_section button {
+  background: #fff;
+  color: var(--main);
+  padding: 8px 12px;
+  font-size: 1.1em;
+  border-radius: 8px;
+  display: block;
+  margin: 12px auto 0;
+  border: 2px solid #fff;
+}
+
+.random_section button:hover {
+  background: var(--main);
+  color: #fff;
+}
+
+.others_head {
+  margin: 16px auto;
+}
+
+.others {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+}
+
+.others h1 {
+  margin-bottom: 16px;
+}
+
+.each {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  background: #fff;
+  color: #000;
+  width: 90%;
+  max-width: 600px;
+  margin: 16px auto;
+  padding: 16px 8px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 5px hsla(45, 93.4%, 47.5%, 0.6);
+}
+
+.each h1 {
+  font-size: 1em;
+  color: var(--main);
+}
+
+.each p {
+  font-size: 1em;
+  padding-block: 4px;
+}
+
+.each p span {
+  font-weight: 600;
+  color: var(--main);
+}
+
+footer {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  padding-block: 25px;
+}
+
+footer div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+footer div a {
+  text-decoration: none;
+  color: #000;
+  font-size: 1.8em;
+}
+
+footer p {
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .others_body {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 800px;
+    place-content: center;
+    align-content: center;
+    margin: 0 auto;
+    grid-gap: 16px;
+  }
+  .each {
+    width: 100%;
+  }
+}
